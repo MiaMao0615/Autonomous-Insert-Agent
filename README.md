@@ -16,11 +16,11 @@ The LoRA weights are hosted on Hugging Face. Access the repository directly here
 
 ### 1\. Unity Integration View
 
-*(Placeholder for screenshot showing the agent's speech bubble in the Unity scene)*
+![Unity Integration View](UnityPicture.jpg)
 
 ### 2\. Python Backend Runtime
 
-*(Placeholder for screenshot showing the Python Tkinter GUI and server console logs)*
+![Python Backend Runtime](PythonPicture.png)
 
 -----
 
@@ -71,4 +71,5 @@ On startup, the script will initialize the models and launch two WebSocket endpo
 
   * `ws://127.0.0.1:8765`: Receives context JSON from Unity.
   * `ws://127.0.0.1:8766`: Sends generated utterance JSON to Unity.
+
 
