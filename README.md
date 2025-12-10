@@ -6,13 +6,9 @@ This repository contains the Python inference backend linking Hugging Face model
 
 The system uses **Qwen2.5-7B-Instruct** as the base model, loaded with specialized LoRA heads for willingness estimation (based on Persona, Scene, and Topic) and strategy selection.
 
-## Model Repository
-
-All trained LoRA weights are hosted externally on Hugging Face. This backend requires connection to the following repository:
-
-> **[https://huggingface.co/MiaMao/Autonomous-Insert-LoRA](https://www.google.com/search?q=https://huggingface.co/MiaMao/Autonomous-Insert-LoRA)**
-
-*Note: This repository contains inference and socket connectivity code only. Training datasets and checkpoints are not included.*
+# Model Checkpoints
+The LoRA weights are hosted on Hugging Face. Access the repository directly here:
+[Hugging Face Model Repo](https://huggingface.co/MiaMao/Autonomous-Insert-LoRA)
 
 -----
 
@@ -75,3 +71,4 @@ On startup, the script will initialize the models and launch two WebSocket endpo
 
   * `ws://127.0.0.1:8765`: Receives context JSON from Unity.
   * `ws://127.0.0.1:8766`: Sends generated utterance JSON to Unity.
+
